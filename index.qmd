@@ -27,7 +27,7 @@ execute:
 
 # 概要
 
-このドキュメントは、研究室メンバーが **Zotero** を統一的にインストールし、書誌情報を **Group Library** で共有するための手順書です。
+このドキュメントは、研究室メンバーが **[Zotero](https://www.zotero.org/)** を統一的にインストールし、書誌情報を **Group Library** で共有するための手順書です。
 
 - **Windows**: `winget` でインストール
 - **macOS**: Homebrew でインストール
