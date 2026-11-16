@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "研究室向け Zotero 導入・共有ガイド"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+  page-footer:
+    center: "Zotero Lab Guide | Managed on GitHub"
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-copy: true
+    code-overflow: wrap
+    lang: ja
