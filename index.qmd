@@ -20,7 +20,18 @@ format:
     documentclass: ltjsarticle
     geometry:
       - margin=20mm
-execute:
+  typst:
+    # 用紙サイズの指定は不要（width/heightで上書きする）
+    margin:
+      x: 20mm          # 左右マージン
+      y: 20mm          # 上下マージン
+    include-in-header: |
+      #set page(
+        width: 210mm,   // A4 縦の幅
+        height: auto,   // 縦はコンテンツに合わせて無制限に伸びる
+        margin: (x: 20mm, y: 20mm)
+      )
+  execute:
   echo: true
   eval: false
 ---
