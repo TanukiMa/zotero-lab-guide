@@ -1,8 +1,10 @@
 ---
 title: "研究室向け Zotero 導入・共有ガイド"
 subtitle: "Windows (winget) / macOS (Homebrew) インストールから Group Library 共有まで"
-author: "Masamichi Goudge M.D., FJSIM"
-date: 2026/11/16
+author:
+  - name: "Masamichi Goudge, M.D. (魔狸)"
+    url: "https://github.com/TanukiMa"
+date: today
 lang: ja
 format:
   html:
@@ -25,7 +27,7 @@ execute:
 
 # 概要
 
-このドキュメントは、研究室メンバーが **[Zotero](https://www.zotero.org/)** を統一的にインストールし、書誌情報を **Group Library** で共有するための手順書です。
+このドキュメントは、研究室メンバーが **Zotero** を統一的にインストールし、書誌情報を **Group Library** で共有するための手順書です。
 
 - **Windows**: `winget` でインストール
 - **macOS**: Homebrew でインストール
@@ -39,9 +41,9 @@ execute:
 - Windows の場合は `winget` が利用可能であること（Windows 10 1809以降 / Windows 11 で標準搭載）
 - macOS の場合は [Homebrew](https://brew.sh/) がインストール済みであること
 
-# Zotero のインストール
+# 1. Zotero のインストール
 
-## Windows（winget）
+## 1.1 Windows（winget）
 
 PowerShell またはコマンドプロンプトを開き、以下を実行します。
 
@@ -64,7 +66,7 @@ winget upgrade -e --id DigitalScholar.Zotero
 winget uninstall -e --id DigitalScholar.Zotero
 ```
 
-## macOS（Homebrew）
+## 1.2 macOS（Homebrew）
 
 ターミナルで以下を実行します。
 
@@ -84,7 +86,7 @@ brew upgrade --cask zotero
 brew uninstall --cask zotero
 ```
 
-## ブラウザコネクタのインストール（必須）
+## 1.3 ブラウザコネクタのインストール（必須）
 
 Zotero 本体とは別に、ブラウザ拡張（Connector）を入れてください。文献ページからワンクリックで保存するために必要です。
 
@@ -93,14 +95,14 @@ Zotero 本体とは別に、ブラウザ拡張（Connector）を入れてくだ�
    - Chrome / Edge / Firefox など対応
    - Safari は macOS 版 Zotero に同梱されている場合あり
 
-# アカウント作成と同期設定
+# 2. アカウント作成と同期設定
 
-## アカウント作成
+## 2.1 アカウント作成
 
 1. [https://www.zotero.org/user/register](https://www.zotero.org/user/register) でアカウントを作成
 2. メールアドレス認証を完了させる
 
-## デスクトップアプリでの同期設定
+## 2.2 デスクトップアプリでの同期設定
 
 1. Zotero を起動
 2. **Edit → Settings**（Windows） / **Zotero → Settings**（macOS）
@@ -116,11 +118,11 @@ Zotero 本体とは別に、ブラウザ拡張（Connector）を入れてくだ�
 PDF などの添付ファイルは無料枠 300 MB までです。研究室で大量の PDF を共有する場合は、グループオーナーが有料ストレージを検討してください。
 :::
 
-# 研究室での書誌情報共有（Group Library）
+# 3. 研究室での書誌情報共有（Group Library）
 
 Zotero の **Groups** 機能を使います。個人ライブラリとは独立した共有ライブラリが作成されます。
 
-## グループの作成（管理者のみ）
+## 3.1 グループの作成（管理者のみ）
 
 1. ブラウザで [https://www.zotero.org/groups](https://www.zotero.org/groups) にログイン
 2. **Create a New Group** をクリック
@@ -142,26 +144,26 @@ Zotero の **Groups** 機能を使います。個人ライブラリとは独立�
 | Public, Open Membership | 誰でも参加可能（ファイル共有不可） |
 :::
 
-## メンバーの招待
+## 3.2 メンバーの招待
 
 1. グループページで **Manage Members** を開く
 2. **Send More Invitations** をクリック
 3. メンバーの Zotero 登録メールアドレス（またはユーザー名）を入力して招待
 4. 招待された側はメールのリンクから参加を承認
 
-## デスクトップでの確認
+## 3.3 デスクトップでの確認
 
 1. Zotero を起動し、同期ボタン（緑色の矢印）をクリック
 2. 左側ペインに **Group Libraries** が表示される
 3. グループ名をクリックすると共有ライブラリの中身が見える
 
-## アイテムの追加・共有
+## 3.4 アイテムの追加・共有
 
 - 個人ライブラリからグループライブラリへ **ドラッグ＆ドロップ** でコピーできます
 - グループ内で直接「Save to Zotero」すると、最初からグループに入ります
 - **注意**: グループライブラリ内のアイテムは個人ライブラリのコピーです。片方を編集してももう片方には自動反映されません
 
-# 推奨運用ルール（研究室向け）
+# 4. 推奨運用ルール（研究室向け）
 
 以下を研究室で合意しておくとトラブルが減ります。
 
@@ -177,7 +179,7 @@ Zotero の **Groups** 機能を使います。個人ライブラリとは独立�
 5. **引用スタイル**  
    研究室でよく使うスタイル（例: Vancouver, APA, 日本内科学会など）を共有する
 
-# よくある質問・トラブルシューティング
+# 5. よくある質問・トラブルシューティング
 
 **Q. グループライブラリが表示されない**  
 A. 同期を実行し、Zotero を再起動してください。メンバーとして正しく参加できているか Web 上でも確認してください。
@@ -191,7 +193,7 @@ A. 左側ペインで My Library と Group Libraries は明確に分かれてい
 **Q. インストールに失敗する（Windows）**  
 A. `winget` が古い場合は `winget source update` を実行してから再試行してください。管理者権限が必要な場合もあります。
 
-# 参考リンク
+# 6. 参考リンク
 
 - [Zotero 公式ドキュメント（Groups）](https://www.zotero.org/support/groups)
 - [Zotero ダウンロードページ](https://www.zotero.org/download/)
