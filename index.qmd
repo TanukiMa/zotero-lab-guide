@@ -1,8 +1,8 @@
 ---
 title: "研究室向け Zotero 導入・共有ガイド"
 subtitle: "Windows (winget) / macOS (Homebrew) インストールから Group Library 共有まで"
-author: "研究室メンバー向けドキュメント"
-date: today
+author: "Masamichi Goudge M.D., FJSIM"
+date: 2026/11/16
 lang: ja
 format:
   html:
@@ -25,7 +25,7 @@ execute:
 
 # 概要
 
-このドキュメントは、研究室メンバーが **Zotero** を統一的にインストールし、書誌情報を **Group Library** で共有するための手順書です。
+このドキュメントは、研究室メンバーが **[Zotero](https://www.zotero.org/)** を統一的にインストールし、書誌情報を **Group Library** で共有するための手順書です。
 
 - **Windows**: `winget` でインストール
 - **macOS**: Homebrew でインストール
