@@ -1,11 +1,18 @@
 ---
 title: "研究室向け Zotero 導入・共有ガイド"
 subtitle: "Windows (winget) / macOS (Homebrew) インストールから Group Library 共有まで"
-author:
+authors:
   - name: "Masamichi Goudge, M.D. (魔狸)"
     url: "https://github.com/TanukiMa"
+    affiliations:
+      - lab
+affiliations:
+  - id: lab
+    name: "MATANUKI"
 date: 2026/11/16
 lang: ja
+filters:
+  - authors-block
 format:
   html:
     toc: true
@@ -31,7 +38,7 @@ format:
         height: auto,   // 縦はコンテンツに合わせて無制限に伸びる
         margin: (x: 20mm, y: 20mm)
       )
-  execute:
+execute:
   echo: true
   eval: false
 ---
