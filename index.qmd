@@ -4,7 +4,7 @@ subtitle: "Windows (winget) / macOS (Homebrew) インストールから Group Li
 author:
   - name: "Masamichi Goudge, M.D. (魔狸)"
     url: "https://github.com/TanukiMa"
-date: today
+date: 2026/11/16
 lang: ja
 format:
   html:
